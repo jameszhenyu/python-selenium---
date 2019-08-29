@@ -83,12 +83,12 @@ if __name__ == '__main__':
     # 输入用户名
     username = driver.find_element_by_css_selector(
         '#web-content > div > div.container > div > div.login-right > div > div.module.module1.module2.loginmodule.collapse.in > div.modulein.modulein1.mobile_box.f-base.collapse.in > div.pb30.position-rel > input')
-    username.send_keys('13857102700')
+    username.send_keys('你的用户名')
 
     # 输入密码
     password = driver.find_element_by_css_selector(
         'div.input-warp.-block > input.input.contactword')
-    password.send_keys('abcde12345')
+    password.send_keys('你的密码')
 
     login_button = driver.find_element_by_xpath('//div[text()="登录"]')
     login_button.click()
