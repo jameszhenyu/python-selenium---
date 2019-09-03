@@ -17,7 +17,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 def get_info():
-
+    
+    Data_store = []
     div_list = re.xpath('//*[@id="web-content"]/div/div[1]/div[2]/div[2]/div')
     profession = re.xpath(
         '//*[@id="search-filter"]/div[2]/div[1]/div/a[3]/text()')
@@ -87,7 +88,7 @@ def write_into_mysql(data):
 
 
 if __name__ == '__main__':
-    Data_store = []
+    
     driver = webdriver.Chrome()
     driver.get("https://www.tianyancha.com/search?base=hangzhou")
     driver.maximize_window()
